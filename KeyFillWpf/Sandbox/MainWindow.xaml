@@ -1,0 +1,24 @@
+﻿<Window x:Class="Sandbox.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="KeyFillWpf" Height="450" Width="800">
+    
+    <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+
+        <StackPanel Orientation="Horizontal" Margin="20">
+            <Button Padding="20" Width="250" Content="Show windows without translucency"
+                    Click="without_Click"/>
+            <TextBlock Text="Alpha is either 0 or 1, no in-betweens"
+                       VerticalAlignment="Center" Margin="20"/>
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal" Margin="20">
+            <Button Padding="20" Width="250" Content="Show windows with translucency"
+                    Click="with_Click"/>
+            <TextBlock Text="Alpha can be anywhere between 0 and 1"
+                       VerticalAlignment="Center" Margin="20"/>
+        </StackPanel>
+
+    </StackPanel>
+    
+</Window>
